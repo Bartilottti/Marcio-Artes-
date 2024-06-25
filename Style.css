@@ -68,12 +68,22 @@ button:hover {
 .botão-vermelho {
     background-color: #BD1C1C;
     border: 1px solid #BD1C1C;
+    color: #ffffff;
     border-radius: 45px;
     font-size: 30px;
     position: absolute;
     top: 45%;
     left: 20%;
-    color: #ffffff;
+    transition: 0.2ms;
+}
+
+.botão-vermelho:hover {
+    background-color: #c20e0ed7;
+
+}
+
+.content-service {
+    text-align: center;
 }
 
 .content-service h2 {
@@ -82,7 +92,7 @@ button:hover {
     font-size: 30px;
 }
 
-.content-service div {
+.serviços {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -90,8 +100,43 @@ button:hover {
     padding: 20px;
 }
 
+#botão-vermelho2 {
+    background-color: #BD1C1C;
+    border: 1px solid #BD1C1C;
+    color: #ffffff;
+    border-radius: 45px;
+    font-size: 30px;
+    margin: 25px 0px;
+    transition-duration: 0.2ms;
+}
 
+#botão-vermelho2:hover {
+    border: none;
+    background-color: #b82121b9;
+}
 
+.marcas {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
 
+.conteiner-marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px; 
+    flex-wrap: wrap;
+}
+
+.conteiner-marcas img {
+    max-height: 100px;
+    margin: 10px; 
+}
+
+.conteiner-vantagens{
+     
+}
 /* Css Página Dois (Só colocar o css da página dois aqui */
 
