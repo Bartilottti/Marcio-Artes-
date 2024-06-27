@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Aleo', serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -222,8 +223,8 @@ button:hover {
 
 .btn-about {
     color: #FF0000;
+    text-decoration: none;
 }
-
 
 
 
