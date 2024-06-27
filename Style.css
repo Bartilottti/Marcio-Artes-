@@ -5,7 +5,6 @@
     padding: 0;
     font-family: 'Aleo', serif;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -51,7 +50,7 @@ button:hover {
 
 .content-principal h1 {
     position: absolute;
-    bottom: 80%;
+    bottom: 70%;
     left: 20%;
     color: #ffffff;
     font-size: 45px;
@@ -59,7 +58,7 @@ button:hover {
 
 .content-principal p {
     position: absolute;
-    bottom: 60%;
+    bottom: 40%;
     left: 20%;
     color: #ffffff;
     font-size: 30px;
@@ -73,7 +72,7 @@ button:hover {
     border-radius: 45px;
     font-size: 30px;
     position: absolute;
-    top: 45%;
+    bottom: 15%;
     left: 20%;
     transition: 0.2ms;
 }
