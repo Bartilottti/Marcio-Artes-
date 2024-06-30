@@ -55,13 +55,23 @@ h1{
   align-items: stretch;
   justify-content: center;
   padding: 10px;
-  gap: 40px;
+  gap: 80px;
  
   
 }
+.container {
+    display: flex;
+    flex-direction: column; /* para empilhar texto e imagem */
+    align-items: center; /* centraliza elementos horizontalmente */
+    justify-content: center; /* centraliza elementos verticalmente */
+}
+
+.container img {
+    max-width: 100%; /* opcional: ajusta a largura máxima da imagem */
+}
 
 .container{
-    width: 200px; /* largura do contêiner */
+    width: 200px; 
     height: 200px;
     background-color: #D9D9D9;
     padding: 18px;
@@ -69,75 +79,60 @@ h1{
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
-   
+  
   
    
 } 
+
+.container-wrapper-2 {
+    display: flex;
+    flex-direction: row; /* para empilhar texto e imagem */
+    align-items: center; /* centraliza elementos horizontalmente */
+    justify-content: center; /* centraliza elementos verticalmente */
+}
+
+.container-2 img {
+    max-width: 100%; /* opcional: ajusta a largura máxima da imagem */
+}
 .container-wrapper-2{
     display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
 }
 
-.container-2{
-     width: 200px; /* largura do contêiner */
-    height: 200px;
-    background-color: #D9D9D9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-   
-          
+.container-2 {
+    width: 200px; 
+   height: 200px;
+   background-color: #D9D9D9;
+   padding: 20px;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   box-sizing: border-box;
+  
+         
 }
-/*
-.botão-vermelho{ 
-   
-   
-    background-color: #BD1C1C;
-    border: 1px solid #BD1C1C;
-    color: #ffffff;
-    border-radius: 45px;
-    font-size: 15px;
-    position: absolute;
-    top: 45%;
-    left: 20%;
-    transition: 0.2ms;
-}*/
 
-/*
-.botão-vermelho{
-      position: absolute;
-        top: 120%;  Posiciona 50% da altura da página 
-        left: 50%; 
-        transform: translate(-50%, -50%);  Centraliza o botão 
-        padding: 15px;
-        background-color: red;
-        color: white;
-        border-radius: 50px;
-     
-        font-size: 15px;
-        transition: 0.2ms;
-}
-*/
 
 .botao-fale{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .fale-conosco{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
      border-radius: 30px;
      width: 250px;
      height: 20px;
     margin: 10px;
+    color: white;
  
  background: #BD1C1C;
 
@@ -146,7 +141,7 @@ h1{
     background-color: #000000;
     text-align: center;
     color: #ffffff;
-    padding: 20px 20px;
+    padding: 20px;
   
 }
 
@@ -156,12 +151,11 @@ h1{
     align-items: center;
     gap: 110px; 
     flex-wrap: wrap;
-  
 }
 
 .conteiner-marcas img {
     max-height: 100px;
-    margin: 10px; 
+    margin: 11px; 
 }
 
 p{
@@ -206,6 +200,7 @@ border-radius: 20px;
     height: 20px;
    margin: 10px;
    background: #BD1C1C;
+   color: white;
   
 }
 
@@ -281,12 +276,6 @@ border-radius: 20px;
 .footer-bottom p {
     margin: 0;
 }
-.btn-about {
-    color: #FF0000;
-    text-decoration: none;
-}
-
-
 
 
 
