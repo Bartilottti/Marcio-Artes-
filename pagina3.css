@@ -125,6 +125,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .fale-conosco {
@@ -134,10 +135,10 @@ h1 {
     align-items: center;
     border-radius: 30px;
     width: 250px;
-    height: 20px;
+    height: 85px;
     margin: 10px;
     color: white;
-
+    font-size: 35px;
     background: #BD1C1C;
 
 }
@@ -202,10 +203,11 @@ p {
     align-items: center;
     border-radius: 30px;
     width: 250px;
-    height: 20px;
+    height: 85px;
     margin: 10px;
-    background: #BD1C1C;
     color: white;
+    font-size: 35px;
+    background: #BD1C1C;
 
 }
 
@@ -282,4 +284,8 @@ p {
 
 .footer-bottom p {
     margin: 0;
+}
+.btn-about {
+    color: #FF0000;
+    text-decoration: none;
 }
