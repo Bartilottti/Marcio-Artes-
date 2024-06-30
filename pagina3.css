@@ -281,6 +281,12 @@ border-radius: 20px;
 .footer-bottom p {
     margin: 0;
 }
+.btn-about {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+
 
 
 
