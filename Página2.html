@@ -96,7 +96,9 @@
                     <p>Sua melhor assistência técnica em Salvador.</p>
                     <p>Tenho tudo o que precisa para seu celular.</p>
                 </div>
-                <a href="https://wa.me/557183001981"  target="_blank"><button class="botão-vermelho">Faça seu Orçamento!</button></a>
+                <a href="https://wa.me/557183001981" class="confirm-link" target="_blank"><button
+                        class="botão-vermelho">Faça seu
+                        Orçamento!</button></a>
             </aside>
             <footer class="footer">
                 <div class="footer-container">
@@ -115,9 +117,10 @@
                         </ul>
                         <p>(71) 8300-1981</p>
                         <div class="social-icons">
-                            <a href="https://wa.me/557183001981"  target="_blank" style="text-decoration: none; color: #000000;"><i
+                            <a href="https://wa.me/557183001981" class="confirm-link"
+                                style="text-decoration: none; color: #000000;" target="_blank"><i
                                     class="fa-brands fa-whatsapp fa-2x"></i></a>
-                            <a href="https://www.instagram.com/marcio_art1/"  target="_blank"
+                            <a href="https://www.instagram.com/marcio_art1/" class="confirm-link" target="_blank"
                                 style="text-decoration: none; color: #000000;"><i
                                     class="fa-brands fa-instagram fa-2x"></i></a>
                         </div>
@@ -136,5 +139,22 @@
             </footer>
 
 </body>
+
+<script>
+    var links = document.querySelectorAll('.confirm-link');
+
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var userConfirmed = confirm("Você deseja ser redirecionado para o site?");
+            if (userConfirmed) {
+                window.location.href = this.href;
+            }
+        });
+    });
+</script>
+
+
 
 </html>
