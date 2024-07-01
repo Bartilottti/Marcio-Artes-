@@ -21,13 +21,20 @@
         </div>
     </header>
     <main>
+
+        <button id="scrollTopBtn" title="Ir para o topo">
+            <img src="acessts/img/arrow-up-solid.svg" alt="Scroll to Top">
+        </button>
+
         <aside>
             <figure class="content-principal">
                 <img src="acessts/img/Img pág principal.png" alt="Imagem Consertando um celular" width="100%">
                 <h1>Faça seu orçamento agora!</h1>
-                <p>Mande Sua Mensagem Pra gente <br> Relatando seu Problema no aparelho e <br> vamos fazer seu orçamento
+                <p>Mande sua mensagem para gente <br> relatando seu problema no aparelho e <br> vamos fazer seu
+                    orçamento
                     online</p>
-                <a href="https://wa.me/557183001981" class="confirm-link" target="_blank"><button class="botão-vermelho">Faça seu
+                <a href="https://wa.me/557183001981" class="confirm-link" target="_blank"><button
+                        class="botão-vermelho">Faça seu
                         Orçamento!</button></a>
             </figure>
         </aside>
@@ -38,7 +45,7 @@
                 <img src="acessts/img/Troca de conectores.png" alt="Troca de conectores">
                 <img src="acessts/img/Desbloqueio.png" alt="Desbloqueio">
             </figure>
-            <a href="Página2.html"><button id="botão-vermelho2">Sabia Mais</button></a>
+            <a href="Página2.html"><button id="botão-vermelho2">Saiba Mais</button></a>
         </section>
         <aside class="marcas">
             <h2>Trabalhamos com as marcas abaixo:</h2>
@@ -112,6 +119,25 @@
                 window.location.href = this.href;
             }
         });
+    });
+
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    scrollTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
     });
 </script>
 

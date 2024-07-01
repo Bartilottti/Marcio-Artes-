@@ -15,13 +15,17 @@
             <a href="Página1.html"><img src="acessts/img/Marcio artes sem fundo.png" alt="Marcio Artes" width="293"
                     height="87"></a>
             <nav class="button-conteiner">
-                <a href="Pagina3.html"><button>Serviços</button></a>
+                <a href="Pagina3.html"><button id="border-red">Serviços</button></a>
                 <a href="Página2.html"><button>Sobre Nós</button></a>
                 <a href=""><button>Contato</button></a>
             </nav>
         </div>
         <h1>Nossos serviços</h1>
     </header>
+
+    <button id="scrollTopBtn" title="Ir para o topo">
+        <img src="acessts/img/arrow-up-solid.svg" alt="Scroll to Top">
+    </button>
 
     <main>
         <div class="container-wrapper">
@@ -67,7 +71,8 @@
 
                 <section>
                     <div class="botao-fale">
-                        <a href="https://wa.me/557183001981" class="confirm-link" target="_blank" ><BUtton class="fale-conosco">Fale
+                        <a href="https://wa.me/557183001981" class="confirm-link" target="_blank"><BUtton
+                                class="fale-conosco">Fale
                                 conosco</BUtton></a>
                     </div>
 
@@ -147,7 +152,7 @@
                 <div class="social-icons">
                     <a href="https://wa.me/557183001981" class="confirm-link"
                         style="text-decoration: none; color: #000000;"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-                    <a href="https://www.instagram.com/marcio_art1/" style="text-decoration: none; color: #000000;" 
+                    <a href="https://www.instagram.com/marcio_art1/" style="text-decoration: none; color: #000000;"
                         class="confirm-link"><i class="fa-brands fa-instagram fa-2x"></i></a>
                 </div>
             </div>
@@ -178,6 +183,27 @@
             }
         });
     });
+
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    scrollTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+
+
 </script>
 
 
