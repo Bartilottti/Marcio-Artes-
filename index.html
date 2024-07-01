@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcio Artes</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/e220e03b2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-content">
+            <img src="acessts/img/Marcio artes sem fundo.png" alt="Marcio Artes" width="293" height="87">
+            <nav class="button-conteiner">
+                <a href="Pagina3.html"><button>Serviços</button></a>
+                <a href="Página2.html"><button>Sobre Nós</button></a>
+                <button>Contato</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <button id="scrollTopBtn" title="Ir para o topo">
+            <img src="acessts/img/arrow-up-solid.svg" alt="Scroll to Top">
+        </button>
+
+        <aside>
+            <figure class="content-principal">
+                <img src="acessts/img/Img pág principal.png" alt="Imagem Consertando um celular" width="100%">
+                <h1>Faça seu orçamento agora!</h1>
+                <p>Mande sua mensagem para gente <br> relatando seu problema no aparelho e <br> vamos fazer seu
+                    orçamento
+                    online</p>
+                <a href="https://wa.me/557183001981" class="confirm-link" target="_blank"><button
+                        class="botão-vermelho">Faça seu
+                        Orçamento!</button></a>
+            </figure>
+        </aside>
+        <section class="content-service">
+            <h2>Alguns dos nossos <br> serviços:</h2>
+            <figure class="serviços">
+                <img src="acessts/img/Troca de tela.png" alt="Troca de tela">
+                <img src="acessts/img/Troca de conectores.png" alt="Troca de conectores">
+                <img src="acessts/img/Desbloqueio.png" alt="Desbloqueio">
+            </figure>
+            <a href="Página2.html"><button id="botão-vermelho2">Saiba Mais</button></a>
+        </section>
+        <aside class="marcas">
+            <h2>Trabalhamos com as marcas abaixo:</h2>
+            <figure>
+                <div class="conteiner-marcas">
+                    <img src="acessts/img/Motorola.png" alt="Motorola">
+                    <img src="acessts/img/Philco.png" alt="Philco">
+                    <img src="acessts/img/Samsung.png" alt="Samsung">
+                    <img src="acessts/img/Xiaomi.png" alt="Xiaomi">
+                    <img src="acessts/img/Apple.png" alt="Apple">
+                    <img src="acessts/img/LG.png" alt="LG">
+                </div>
+            </figure>
+        </aside>
+        <section class="conteiner-vantagens">
+            <h2>Vantagens de escolher nossa <br> assistência técnica </h2>
+            <div class="vantagens">
+                <img src="acessts/img/Técnicos qualificados.png" alt=" Técnicos qualificados">
+                <img src="acessts/img/Orçamento sem compromisso.png" alt="Orçamento sem compromisso">
+                <img src="acessts/img/Atendimento Personalizado.png" alt="Atendimento Personalizado">
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre nós</h3>
+                <p>Com mais de 20 anos de experiência no mercado, nossa empresa se dedica á manutenção de celulares
+                    e relógios oferecendo serviços de alta qualidade e confiabilidade.</p>
+                <a href="Página2.html" class="btn-about">Saiba mais</a>
+            </div>
+            <div class="footer-section menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="Pagina3.html">Serviços</a></li>
+                    <li>Contato:</li>
+                </ul>
+                <p>(71) 8300-1981</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/557183001981" style="text-decoration: none; color: #000000;" target="_blank"
+                        class="confirm-link"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                    <a href="https://www.instagram.com/marcio_art1/" class="confirm-link" target="_blank"
+                        style="text-decoration: none; color: #000000;"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="footer-section location">
+                <h3>Localização</h3>
+                <p>Rua dos ferroviários, 690/ Plataforma, Salvador, Bahia, Brazil</p>
+            </div>
+            <div class="footer-logo">
+                <img src="acessts/img/Marcio artes sem fundo.png" alt="Márcio Artes Assistência Técnica">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Marcio Artes. Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    var links = document.querySelectorAll('.confirm-link');
+
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var userConfirmed = confirm("Você deseja ser redirecionado para o site?");
+            if (userConfirmed) {
+                window.location.href = this.href;
+            }
+        });
+    });
+
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    scrollTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    });
+</script>
+
+</html>
