@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 293px;
+    height: 87px;
+}
+
 header {
     background-color: #D9D9D9;
     height: 100px;
@@ -273,6 +278,13 @@ button:hover {
 
 
 @media only screen and (max-width: 480px) {
+    
+    .logo {
+        width: 150px;
+        height: auto;
+        padding: 15px 0px;
+    }
+
     .nav-content {
         flex-direction: row;
         justify-content: space-between;
