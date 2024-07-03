@@ -271,7 +271,7 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Media Query para dispositivos móveis com largura máxima de 480px */
+
 @media only screen and (max-width: 480px) {
     .nav-content {
         flex-direction: row;
