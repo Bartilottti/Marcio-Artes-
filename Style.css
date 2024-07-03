@@ -326,3 +326,81 @@ button:hover {
         height: 40px;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .nav-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .button-conteiner {
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    button {
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+
+    .content-principal h1,
+    .content-principal p,
+    .botão-vermelho {
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content-principal h1 {
+        bottom: 60%;
+        font-size: 22px;
+        top: 10px;
+    }
+
+    .content-principal p {
+        bottom: 30%;
+        font-size: 16px;
+        top: 40px;
+    }
+
+    .botão-vermelho {
+        bottom: 10%;
+        font-size: 16px;
+        padding: 6px 8px;
+        width: auto;
+        height: auto;
+    }
+
+    .content-service h2 {
+        font-size: 22px;
+    }
+
+    .serviços,
+    .vantagens {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .conteiner-marcas img {
+        max-height: 45px;
+    }
+
+    .footer-section {
+        min-width: auto;
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        max-height: 45px;
+    }
+
+    #scrollTopBtn img {
+        width: 35px;
+        height: 35px;
+    }
+}
